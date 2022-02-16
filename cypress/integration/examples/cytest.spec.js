@@ -1,4 +1,3 @@
-///<reference types="cypress"/>
 describe('Basic Tests', () => {
 	it('Login', () => {
 		//visit site
