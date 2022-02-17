@@ -45,8 +45,8 @@ describe('Basic Tests', () => {
 		//assert
 		cy.get('#checkout_summary_container > div > div.summary_info > div.summary_subtotal_label').invoke('text').as('finaltotal');
 		var finaltotal = await promisify(cy.get('@finaltotal'))
-		finaltotal = finaltotal.replaceAll('/[^a-zA-Z0-9]/g','');
-		expect('Item total: $' + total).to.equal(finaltotal);
+		finaltotal = JSON.parse(finaltotal.replaceAll(/[^\d.-]/g,''));
+		expect(total).to.equal(finaltotal);
 
 		//logout
 		cy.get('#react-burger-menu-btn').click();
