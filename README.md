@@ -7,7 +7,7 @@ Technical debt
 
 - When selecting the items in the list for the UI test, the selection should be made at random as that would allow to check if any of the other items in the list have any bugs around them
 
-- The organisation for code should be better to make it more readable and manageable
+-  The organisation for code should be better to make it more readable and manageable
 
 \*\*\*For Bonus Points
 
