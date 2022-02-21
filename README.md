@@ -28,5 +28,8 @@ To run the API tests, please change the URL to "https://reqres.in/" on the cypre
 2. Find three issues with the store.
    Answer
    a. All the items in the list has same image which will be misleading to the users as they will not be able to know what the product will actually look like
+   
    b. Three of the items in the list cannot be added to the cart
+   
    c. Sort dropdown is not working.
+   
